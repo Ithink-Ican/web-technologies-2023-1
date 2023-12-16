@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./styles/style.min.css" />
+    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+
+    <div class="wrapper">
+        <!-- ШАПКА -->
+      <header class="header">
+        <div class="header__container _container">
+          <div class="header__body">
+            <div class="header__logo_container">
+              <div class="header__burger">
+                <span></span>
+              </div>
+              <a href="#" class="header_logo">IT WEBSITE</a>
+              <div class="mail_768">
+                <embed src="./pictures/mail.svg" />
+                <a href="mailto:itcompany@gmail.com" class="contacts__link">itcompany@gmail.com</a>
+              </div>
+            </div>
+            <div class="header__menu_container">
+              <nav class="header__menu menu">
+                <ul class="menu__list">
+                  <li class="menu__item">
+                    <a href="#" class="menu__link">Services</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="#" class="menu__link">Media</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="#" class="menu__link">Cases</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="#" class="menu__link">FAQ</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="#" class="menu__link">Contacts</a>
+                  </li>
+                </ul>
+                <div class="header__contacts">
+                  <ul class="contacts__list">
+                    <li class="contacts__item">
+                      <embed class="header_icon" src="./pictures/phone.svg" />
+                      <a href="tel:+71111111111" class="contacts__link">+7 (111) 111 11 11</a>
+                    </li>
+                    <li class="contacts__item">
+                      <embed id="contacts__second_phone" class="header_icon" src="./pictures/phone.svg" />
+                      <a href="tel:+71111111111" class="contacts__link">+7 (111) 111 11 11</a>
+                    </li>
+                    <li class="contacts__item">
+                      <embed class="header_icon" src="./pictures/mail.svg" />
+                      <a href="mailto:itcompany@gmail.com" class="contacts__link">itcompany@gmail.com</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- ГЛАВНЫЙ БЛОК -->
+      <main class="page">
+        <section class="page__main-block main-block">
+            <div class="main_block__container _container">
+                <div class="main_block__body">
+                    <h1 class="h1 main_block__title">Development of <span>mobile applications</span> and <span>web services</span> of any complexity</h1>
+                    <div class="main_block__text">We create mobile applications for iOS, Android that transfer your business to mobile applications of your customers' devices</div>
+                    <div class="scroller__container">
+                      <div class="scroller">
+                        <div class="scroller__inner">
+                          <img class="scroller__img" src="./pictures/scroll_pictures/column-left.webp">
+                        </div>
+                      </div>
+                      <div class="scroller" data-direction="down">
+                        <div class="scroller__inner">
+                          <img class="scroller__img" src="./pictures/scroll_pictures/column-right.webp">
+                        </div>
+                      </div>
+                    </div>
+                    <form action="" class="main_block__form">
+                        <h2 class="main_block_form__title">Leave your contacts and we will call you back within 30 minutes</h2>
+                        <div class="main_block_form__input">
+                                <label class="leave_contacts_form_label" for="phone">Phone number</label>
+                                <input class="phone" type="tel" id="phone" name="phone" value="+71111111111" pattern="\+?[0-9\s\-\(\)]+" required/>
+                        </div>
+                        <div class="main_block_form__input">
+                                <label class="leave_contacts_form_label" for="full_name">Full name</label>
+                                <input type="text" id="full_name" name="full_name" value="Иван Иванов" required minlength="2" maxlength="8"/>
+                        </div>
+                        <div class="main_block_form__button">
+                                <input type="submit" class="main_block_form__submit" value="Get consultation"/>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="page__services services">
+          <div class="services_container _container">
+            <div class="services__body">
+              <div class="services__description">
+                <h1 class="h1 services__title">Full development cycle</h1>
+                <div class="services__text">We use proven technologies</div>
+                <div class="services__main">
+                  <div class="services__main_item">
+                    <div class="main_item__title">Web</div>
+                    <div class="main_item__text">PHP / Javascript / Node.JS / Web Socket / Socket.io / Vue.js/ Nuxt / MySQL / Laravel / GO lang / django / Python</div>
+                  </div>
+                  <div class="services__main_item">
+                    <div class="main_item__title">Mobile</div>
+                    <div class="main_item__text">Swift / Kotlin / Alamofire / Firebase / CoreData / Room / Realm / Coroutine / RxJava / RxSwift / Unit Test / Navigation</div>
+                  </div>
+                </div>
+            </div>
+              <div class="services__list_container">
+                <ul class="services__list">
+                  <li class="services__list_item">
+                    iOS  development
+                    <embed src="./pictures/services_list_arrow.svg" class="services_list_arrow"/>
+                  </li>
+                  <li class="services__list_item">
+                    Android development
+                    <embed src="./pictures/services_list_arrow.svg" class="services_list_arrow"/>
+                  </li>
+                  <li class="services__list_item">
+                    Web development
+                    <embed src="./pictures/services_list_arrow.svg" class="services_list_arrow"/>
+                  </li>
+                  <li class="services__list_item">
+                    UI/UX design
+                    <embed src="./pictures/services_list_arrow.svg" class="services_list_arrow"/>
+                  </li>
+                  <li class="services__list_item">
+                    Testing
+                    <embed src="./pictures/services_list_arrow.svg" class="services_list_arrow"/>
+                  </li>
+                  <li class="services__list_item">
+                    Launch
+                    <embed src="./pictures/services_list_arrow.svg" class="services_list_arrow"/>
+                  </li>
+                  <li class="services__list_item">
+                    IT consulting
+                    <embed src="./pictures/services_list_arrow.svg" class="services_list_arrow"/>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__developed_projects developed_projects">
+          <div class="developed_projects__container _container">
+            <div class="developed_projects__body">
+              <h1 class="h1 developed_projects__title">
+                Developed more than <span>100</span> projects in <span>15</span> industries
+              </h1>
+              <div class="developed_projects__grid">
+                <div class="grid__item">
+                  <embed class="developed_projects__embed" src="./pictures/developed projects icons/social media.svg" />
+                  Social media
+                </div>
+                <div class="grid__item">
+                  <embed class="developed_projects__embed" src="./pictures/developed projects icons/education.svg" />
+                  Education
+                </div>
+                <div class="grid__item">
+                  <embed class="developed_projects__embed" src="./pictures/developed projects icons/ar tech.svg" />
+                  AR technology
+                </div>
+                <div class="grid__item">
+                  <embed class="developed_projects__embed" src="./pictures/developed projects icons/fitness and sport.svg" />
+                  Fitness and sport
+                </div>
+                <div class="grid__item">
+                  <embed class="developed_projects__embed" src="./pictures/developed projects icons/auto.svg" />
+                  Auto, transport
+                </div>
+                <div class="grid__item">
+                  <embed class="developed_projects__embed" src="./pictures/developed projects icons/tv series.svg" />
+                  TV series
+                </div>
+                <div class="grid__item">
+                  <embed class="developed_projects__embed" src="./pictures/developed projects icons/bank.svg" />
+                  Bank
+                </div>
+                <div class="grid__item">
+                  <embed class="developed_projects__embed" src="./pictures/developed projects icons/medicine.svg" />
+                  Medicine, health
+                </div>
+                <div class="grid__item">
+                  <embed class="developed_projects__embed" src="./pictures/developed projects icons/startups.svg" />
+                  Startups
+                </div>
+                <div class="grid__item">
+                  <embed class="developed_projects__embed" src="./pictures/developed projects icons/construction.svg" />
+                  Construction
+                </div>
+                <div class="grid__item">
+                  <embed class="developed_projects__embed" src="./pictures/developed projects icons/restaurants.svg" />
+                  Restaurants, food delivery
+                </div>
+                <div class="grid__item">
+                  <embed class="developed_projects__embed" src="./pictures/developed projects icons/religion.svg" />
+                  Religion
+                </div>
+                <div class="grid__item">
+                  <embed class="developed_projects__embed" src="./pictures/developed projects icons/games.svg" />
+                  Game projects
+                </div>
+                <div class="grid__item">
+                  <embed class="developed_projects__embed" src="./pictures/developed projects icons/marketplaces.svg" />
+                  Marketplaces
+                </div>
+                <div class="grid__item">
+                  <embed class="developed_projects__embed" src="./pictures/developed projects icons/online courses.svg" />
+                  Online cources
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__top_projects top_projects">
+          <div class="top_projects__container _container">
+            <div class="top_projects__body">
+              <h1 class="h1 top_projects__title">Projects we are proud of</h1>
+              <div class="top_projects__text">Our software development company is truly proud of the wonderful clients we have worked with. We enjoy a long-term partnership</div>
+              <div class="top_projects__list_container">
+                <ul class="top_projects__list">
+                    <li class="top_projects_list__item top_project_1">I-teka</li>
+                    <li class="top_projects_list__item top_project_2">Dauletten</li>
+                    <li class="top_projects_list__item top_project_3">Guru Bosch</li>
+                    <li class="top_projects_list__item top_project_4">Santo</li>
+                    <li class="top_projects_list__item top_project_5">Home Credit Bank</li>
+                    <li class="top_projects_list__item top_project_6">BI Partners</li>
+                    <li class="top_projects_list__item top_project_7">Europharma</li>
+                  </ul>
+                  <img id="phones_small" class="top_project__phones" src="./pictures/phones.png">
+                  <a href="#" id="button_1200" class="view_more_button__link">View 100 more projects</a>
+              </div>
+              <div class="top_projects__selected_container">
+                <div class="top_projects__selected_project">
+                  <h1 class="h1 selected_project__title">I-teka</h1>
+                  <a href="#" id="button_767" class="view_more_button__link">View 100 more projects</a>
+                  <div class="selected_project__text">The application is designed to search for drugs by availability in pharmacies in cities. During quarantine, the application helped many people,<br>
+                    which gives more value.</div>
+                  <div class="selected_project__services">Business analysis / iOS / Android / QA / UI/UX Design</div>
+                  <div class="selected_project__short_description">
+                    <div class="short_description__item">
+                      <embed class="short_description_item__icon" src="./pictures/selected_project_location.svg" />
+                      Kazakhstan
+                    </div>
+                    <div class="short_description__item">
+                      <embed class="short_description_item__icon" src="./pictures/selected_project_industry.svg" />
+                      Medicine
+                    </div>
+                  </div>
+                  <div class="top_project__results">
+                    <div class="results__item">
+                      <div class="results__title">400%</div>
+                      User Growth
+                    </div>
+                    <div class="results__item">
+                      <div class="results__title">+ 200 000</div>
+                      Active Users
+                    </div>
+                  </div>
+                  <div class="selected_project__download_buttons">
+                    <embed class="download_buttons__button" src="./pictures/download_buttons_ios.svg" />
+                    <embed class="download_buttons__button" src="./pictures/download_buttons_android.svg" />
+                  </div>
+                  <a href="#" id="button_425" class="view_more_button__link">View 100 more projects</a>
+                </div>
+                <img id="phones_big" class="top_project__phones" src="./pictures/phones.png">
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__discuss_project discuss_project">
+          <div class="discuss_project__container _container">
+            <div class="discuss_project__body">
+              <div class="discuss_project__text_section">
+                <h1 class="h1 text_section__title">Let's discuss<br>Your project</h1>
+                <div class="text_section__text">Let's figure out how to create an effective application,<br> its cost and terms of its development</div>
+              </div>
+              <form action="" class="discuss_project__form">
+                    <div class="discuss_project_form__phone_input discuss_input_container">
+                        <label class="leave_contacts_form_label" for="phone2">Best phone number</label>
+                        <input class="phone" type="tel" id="phone2" name="phone2" value="+71111111111" pattern="\+?[0-9\s\-\(\)]+" required/>
+                    </div>
+                    <div class="discuss_project_form__name_input discuss_input_container">
+                        <label class="leave_contacts_form_label" for="full_name2">Full name</label>
+                        <input type="text" id="full_name2" name="full_name2" value="Иван Иванов" required minlength="2" maxlength="8"/>
+                    </div>
+                    <div class="discuss_project_form__button">
+                        <input type="submit" class="discuss_project_form__submit" value="Discuss the project"/>
+                    </div>
+            </form>
+            </div>
+          </div>
+        </section>
+        <section class="page__dev_stages dev_stages">
+          <div class="dev_stages__container _container">
+            <div class="dev_stages__body">
+              <h1 class="h1 dev_stages__title">Application Development Stages</h1>
+              <div class="dev_stages__grid">
+                <div class="dev_stages__analysis dev_stages_grid__item">
+                  <div class="dev_stages_item__title"><embed class="dev_stage_item__icon" src="./pictures/dev_stages_analysis.svg" />Analysis</div>
+                  <div class="dev_stages_item__text">We write technical specifications for development, taking into account the business processes and technologies of the customer and the needs of users.</div>
+                </div>
+                <div class="dev_stages__design dev_stages_grid__item">
+                  <div class="dev_stages_item__title"><embed class="dev_stage_item__icon" src="./pictures/dev_stages_design.svg" />Design</div>
+                  <div class="dev_stages_item__text">We adapt the customer's corporate identity to the platform guidelines. <br> We draw convenient and understandable interfaces.</div>
+                </div>
+                <div class="dev_stages__development dev_stages_grid__item">
+                  <div class="dev_stages_item__title"><embed class="dev_stage_item__icon" src="./pictures/dev_stages_development.svg" />Development</div>
+                  <div class="dev_stages_item__text">We create an extensible architecture, write clean and stable code. <br> We integrate with customer technologies.</div>
+                </div>
+                <div class="dev_stages__testing dev_stages_grid__item">
+                  <div class="dev_stages_item__title"><embed class="dev_stage_item__icon" src="./pictures/dev_stages_testing.svg" />Testing</div>
+                  <div class="dev_stages_item__text">We carry out functional testing and do bug fixes. <br> We adapt the application to different phone resolutions</div>
+                </div>
+                <div class="dev_stages__launching dev_stages_grid__item">
+                  <div class="dev_stages_item__title"><embed class="dev_stage_item__icon" src="./pictures/dev_stages_launching.svg" />Launching</div>
+                  <div class="dev_stages_item__text">We design the application page and publish it in the <br> App Store and Google Play stores.</div>
+                </div>
+                <div class="dev_stages__support dev_stages_grid__item">
+                  <div class="dev_stages_item__title"><embed class="dev_stage_item__icon" src="./pictures/dev_stages_support.svg" />Support</div>
+                  <div class="dev_stages_item__text">We monitor the stability of the application, update it for new <br> devices and versions of iOS and Android.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__our_team our_team">
+          <div class="our_team__container _container">
+            <div class="our_team__body">
+              <div class="our_team__text_container">
+                <h1 class="h1 our_team__title">Our team</h1>
+                <div class="our_team__proclamation">Thousand is a full-cycle digital production company with its own product analytics, design, web and mobile development.</div>
+                <div id="our_team_video__container_small" class="our_team__video_container">
+                  <img id="our_team__video_425" class="our_team__video" src="./pictures/Our team.png" alt="">
+                </div>
+                <div class="our_team__achievements">
+                  <div class="achievements__item">
+                    <h2 class="item__title">28</h2>
+                    team members
+                  </div>
+                  <div class="achievements__item">
+                    <h2 class="item__title">+100</h2>
+                    projects
+                  </div>
+                  <div class="achievements__item">
+                    <h2 class="item__title">7 years</h2>
+                    in IT sphere
+                  </div>
+                </div>
+                <div class="our_team__text">
+                  All the necessary specialists - from a designer to a tester - are on our staff. We hire the best specialists in the market. It's expensive but worth it
+                </div>
+              </div>
+              <div id="our_team_video__container_big" class="our_team__video_container">
+                <img class="our_team__video" src="./pictures/Our team.png" alt="">
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__book_giveaway book_giveaway">
+          <div class="book_giveaway__container _container">
+            <div class="book_giveaway__body">
+              <div class="book_text__container">
+                <h1 class="h1 book_giveaway__title">Get the book for free by leaving your contacts</h1>
+                <img id="book_small" class="book" src="./pictures/book.png">
+                <form action="" class="book_giveaway__form">
+                  <div class="book_giveaway_form__input">
+                    <label class="book_giveaway_form_label" for="phone3">Phone number</label>
+                    <input class="book_giveaway_form__phone_input" type="tel" id="phone3" name="phone3" value="+71111111111" pattern="\+?[0-9\s\-\(\)]+" required/>
+                  </div>
+                  <div class="book_giveaway_form__input">
+                    <input type="text" id="full_name3" name="full_name3" value="Иван Иванов" required minlength="2" maxlength="8"/>
+                  </div>
+                  <div class="book_giveaway_form__input">
+                    <label class="book_giveaway_form_label" for="email">email</label>
+                    <input type="email" id="email" name="email" value="mail@mail.com" required/>
+                  </div>
+                  <div class="book_giveaway_form__button">
+                    <input type="submit" class="book_giveaway_form__submit" value="Send me ebook to my mail"/>
+                  </div>
+                </form>
+              </div>
+              <img id="book_big" class="book" src="./pictures/book.png">
+            </div>
+          </div>
+        </section>
+        <section class="page__faq faq">
+          <div class="faq__body_container _container">
+            <div class="faq__body">
+              <h1 class="h1 faq__title">FAQ</h1>
+              <div class="faq__container">
+                <div class="faq_cost faq__item">
+                  <div class="faq_item__title_container">
+                    <p class="faq_item__title">What is the cost of a mobile application?</p>
+                    <button type="button" class="collapsible"></button>
+                  </div>
+                  <div class="content">
+                      <p>Lorem ipsum...</p>
+                  </div>
+                </div>
+                <div class="faq_guarantee faq__item">
+                  <div class="faq_item__title_container">
+                    <p class="faq_item__title">Do you provide a guarantee for the mobile application?</p>
+                    <button type="button" class="collapsible"></button>
+                  </div>
+                  <div class="content">
+                      <p>Lorem ipsum...</p>
+                  </div>
+                </div>
+                <div class="faq_how_long faq__item">
+                  <div class="faq_item__title_container">
+                    <p class="faq_item__title">How long will development take?</p>
+                    <button type="button" class="collapsible"></button>
+                  </div>
+                  <div class="content">
+                      <p>Development terms directly depend on the requirements for the mobile application, the characteristics of the company, as well as the wishes of the customer.<br><br>
+                        Average development time from start to finished application:<br>
+                        Medium projects up to 3 months.<br>
+                        Large projects about 4-6 months.<br>
+                        To get a more accurate estimate of the project completion time, it is necessary to determine the main task of the application, think over its logic and functionality.
+                      </p>
+                  </div>
+                </div>
+                <div class="faq_confidentiality faq__item">
+                  <div class="faq_item__title_container">
+                    <p class="faq_item__title">I will not tell my idea, do you guarantee confidentiality?</p>
+                  <button type="button" class="collapsible"></button>
+                  </div>
+                  <div class="content">
+                      <p>Lorem ipsum...</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- ПОДВАЛ -->
+      <footer class="footer">
+        <div class="footer__container _container">
+          <h1 class="footer__title">IT WEBSITE</h1>
+          <div class="footer__main">
+            <div class="footer__column">
+              <div class="column__label">
+                <embed class="footer_column__icon" src="./pictures/footer_phone.svg">
+                Contact nums
+              </div>
+              <div class="column__content">
+                +7 (778) 395 90 26
+              </div>
+            </div>
+            <div class="footer__column">
+              <div class="column__label">
+                <embed class="footer_column__icon" src="./pictures/footer_mail.svg">
+                Post
+              </div>
+              <div class="column__content">
+                mail@mail.com
+              </div>
+            </div>
+            <div class="footer__column">
+              <div class="column__label">
+                <embed class="footer_column__icon" src="./pictures/footer_location.svg">
+                Adress
+              </div>
+              <div class="column__content">
+                City city, steet st. 90
+              </div>
+            </div>
+            <div class="footer__column">
+              <div class="column__label">
+                <embed class="footer_column__icon" src="./pictures/footer_request.svg">
+                Leave a request
+              </div>
+              <div class="column__content">
+                Leave a request
+              </div>
+            </div>
+          </div>
+          <div class="footer__subtitle">
+            <embed class="footer_subtitle__icon" src="./pictures/footer_subtitle.svg">
+            We work throughout world
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="./scripts/animate.js"></script>
+  <script src="./scripts/header_menu.js"></script>
+  <script src="./scripts/faq_collapse.js"></script>
+</html>
