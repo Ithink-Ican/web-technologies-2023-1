@@ -86,6 +86,20 @@ export class Catalog {
 
     renderItems (items) {
         this.#itemsEl.innerHTML = items.map(this.#renderItem).join('')
+        let postItems = document.querySelectorAll('.post-item');
+
+        postItems.forEach(n => n.addEventListener("click", (e) => {
+            e.preventDefault();
+            let href = n.href.split("/");
+            let postObj = {
+                "id": href[href.length - 1],
+                "title": n.firstElementChild.textContent,
+                "text": n.lastElementChild.textContent
+            }
+            let strPostObj = JSON.stringify(postObj)
+            localStorage.setItem("postItem", strPostObj)
+            window.open("./posts.html", "_self")
+        }))
     }
 
     renderPagination () {
