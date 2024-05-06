@@ -1,0 +1,82 @@
+@import "./global.css";
+@import "./fonts.css";
+@import "./header.css";
+@import "./main.css";
+@import "./loader.css";
+@import "./form.css";
+@import "./text-field.css";
+@import "./button.css";
+
+
+.none {
+    display: none;
+}
+
+.todo_list__container {
+    display: flex;
+    max-width: 400px;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.todo_list__container h1 {
+    text-align: center;
+}
+
+.todo_list__empty_title {
+    text-align: center;
+}
+
+.todo__list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.todo__list li {
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.todo_item__buttons {
+    display: flex;
+    gap: 5px;
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+
+  input[type="checkbox"]+span:before {
+    content: '';
+    background-image: url('../icons/checkbox_unchecked.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+  }
+  
+  input[type="checkbox"]:checked+span:before {
+    /* NOTE: Replace the url with a path to an SVG of a checkmark to get a checkmark icon */
+    background-image: url('../icons/checkbox_checked.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    /* The size of the checkmark icon, you may/may not need this */
+    background-size: 25px;
+    border-radius: 2px;
+    background-color: #e7ffba;
+    color: white;
+  }
+
+  .delete_todo {
+    max-width: 25px;
+    max-height: 25px;
+    color: red;
+    font-size: 20px;
+    padding: 0px 2px 0px 2px;
+    line-height: 0px;
+  }
